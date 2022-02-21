@@ -11,7 +11,7 @@
     box-shadow: inset 210em 0.25em 0.25em rgba(0, 0, 0, 0.7);
 }
 
-
+/* Navbar */
 #logo {
     width: 34px;
     height: 55px;
@@ -42,7 +42,6 @@ nav ul li a {
     color: #D6C2AE;
     font-size: 14px;
     line-height: 27px;
-    /* padding-right: 55px; */
 }
 
 nav ul li a:hover {
@@ -51,6 +50,7 @@ nav ul li a:hover {
     box-shadow: 3px 3px 6px rgba(234, 224, 213, 0.4);
 }
 
+/* Title */
 .hero {
     display: flex;
     align-items: left;
@@ -58,7 +58,7 @@ nav ul li a:hover {
     padding: 15% 16% 0 12%;
 }
 
-h1, h2 {
+.hero h1, .hero h2 {
     font-family: 'Proza Libre';
     color: #D6C2AE;
 }
@@ -129,4 +129,85 @@ div button {
 div button img {
     filter: invert(90%) sepia(11%) saturate(557%) hue-rotate(340deg) brightness(88%) contrast(90%);
     width: 55px;
+}
+
+/* Pépinière description */
+.pepiniere {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 114px;
+    margin: 0 12%;
+}
+
+.col-left {
+    position: relative;
+    flex-basis: 65%;
+}
+
+.col-left h2 {
+    font-family: 'Proza Libre';
+    color: #243E36;
+    font-weight: bold;
+}
+
+.col-left p, .col-left ul li {
+    font-family: 'Encode Sans';
+    line-height: 24px;
+    margin-top:5px;
+    margin-bottom:5px
+}
+
+p.pep {
+    margin-bottom: 20px;
+}
+
+/* Cards info */
+.col-right {
+    position: relative;
+    flex-basis: 30%;
+    padding-left: 68px;
+}
+
+.col-right-bis {
+    position: relative;
+    flex-basis: 20%;
+    padding-top: 39px;
+}
+
+.col-right div, .col-right-bis div  {
+    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    width: 232px;
+    height: 180px;
+    margin-bottom: 25px;
+}
+
+.info-card img {
+    height: 63px;
+    width: 75px;
+    padding: 16% 34% 16px;
+}
+
+#logo-ville-paris {
+    padding-top: 10%;
+}
+
+.info-card p {
+    font-family: 'Encode Sans';
+    font-weight: normal;
+    color: #243E36;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.info-card p span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.card-text{
+    padding-top: 28%;
 }
