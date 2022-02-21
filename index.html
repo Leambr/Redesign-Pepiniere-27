@@ -12,10 +12,13 @@
             src: url('Encode_Sans\EncodeSans-VariableFont_wdth,wght.ttf');
         }
 
+        /* does not work check why */
         @font-face {
-            font-family: "Proza Libre";
+            font-family: 'Proza Libre';
             src: url('Proza_Libre\ProzaLibre-ExtraBold.ttf');
-        }
+        } 
+
+        
     </style>
 </head>
 <body>
@@ -25,25 +28,29 @@
         <!-- Homepage - Landing page -->
         <div class="homepage">
             <!-- Navbar -->
-            <div class="navigation">
-                <div id="logo">
-                    <img src="img\image2vector.svg" alt="Logo Pépinière" class="logo">
-                </div>
-                <div">
-                    <a href="" class="navbar">Start-up</a>
-                    <a href="" class="navbar">Offres</a>
-                    <a href="" class="navbar">La Pépinière 27 x Cirque</a>
-                    <a href="" class="navbar">Contact</a>
-                </div>
+            <div class="navbar">
+                <a href="">
+                    <img src="img\logo.png" alt="Logo Pépinière" id="logo">
+                </a>
+                
+                <nav>
+                    <ul>
+                        <li><a href="">Start-up</a></li>
+                        <li><a href="">Offres</a></li>
+                        <li><a href="">La Pépinière 27 x Cirque</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>  
+                </nav>
             </div>
+
             <!-- Title -->
             <section class="hero">
                 <h1>Bienvenue à Pépinière 27</h1>
-                <h2>Créée pour des entrepreneurs par des entrepreneurs.</h2>
-                <button type="button" class="cta">Nous rejoindre</button>
+                <h2>Créée pour des entrepreneurs par des entrepreneurs</h2>
+                <input type="button" class="cta" value="Nous rejoindre">
             </section>
-            <div class="bottom">
-                <button type="button" id="down-arrow">Buy Now <img src="img\down-arrow-svgrepo-com.svg" alt="arrow"></button>
+            <div id="discover">
+                <button type="button">Découvrir <img src="img\down-arrow-svgrepo-com.svg" alt="arrow" id="down-arrow"></button>
             </div>
         </div>
     </div>

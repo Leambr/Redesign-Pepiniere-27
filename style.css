@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+.homepage {
+    background-image: url('http://www.pepiniere27.fr/media/uploads/pepi27/fckfiles/images/Carousel%20de%20home/_YR_0304.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 200em 0.25em 0.25em rgba(0, 0, 0, 0.7);
+}
+
+
+#logo {
+    width: 34px;
+    height: 55px;
+    padding-top: 10px;
+}
+    
+.navbar {
+    margin: 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 22px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Proza Libre';
+    font-weight: normal;
+    color: #D6C2AE;
+    font-size: 14px;
+    line-height: 27px;
+    /* padding-right: 55px; */
+}
+
+nav ul li a:hover {
+    color: #EAE0D5;
+    border-bottom: 4px solid #528E7C;
+    box-shadow: 3px 3px 6px rgba(234, 224, 213, 0.4);
+}
+
+.hero {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin: 15% 16% 10% 12%;
+}
+
+h1, h2 {
+    font-family: 'Proza Libre';
+    color: #D6C2AE;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 66px;
+    line-height: 73px;
+    width: 425px;
+    padding-bottom: 33px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 39px;
+    padding-bottom: 37px;
+}
+
+.cta {
+    background: #E15554;
+    color: #EAE0D5;
+    text-transform: uppercase;
+    font-family: 'Encode Sans';
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta:hover {
+    color: #E15554;
+    background: #fff;
+    border: 3px solid #E15554;
+    box-sizing: border-box;
+
+}
+
+input {
+    width: 220px;
+    height: 44px;
+}
+
+#discover {
+    margin-top: 11%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D6C2AE;
+    font-family: 'Encode Sans';
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.035em;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+div button img {
+    filter: invert(90%) sepia(11%) saturate(557%) hue-rotate(340deg) brightness(88%) contrast(90%);
+    width: 55px;
+}
