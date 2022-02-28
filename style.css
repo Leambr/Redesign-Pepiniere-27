@@ -132,7 +132,7 @@ div button img {
 }
 
 /* Pépinière description */
-.pepiniere {
+.pepiniere, .start-up {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -145,20 +145,20 @@ div button img {
     flex-basis: 65%;
 }
 
-.col-left h2 {
+.col-left h2, .startup-right h2 {
     font-family: 'Proza Libre';
     color: #243E36;
     font-weight: bold;
 }
 
-.col-left p, .col-left ul li {
+.col-left p, .col-left ul li, .startup-right p {
     font-family: 'Encode Sans';
     line-height: 24px;
     margin-top:5px;
     margin-bottom:5px
 }
 
-p.pep {
+p.pep, .startup-right p {
     margin-bottom: 20px;
 }
 
@@ -211,3 +211,54 @@ p.pep {
 .card-text{
     padding-top: 28%;
 }
+
+/* Start-up */
+.startup-left div, .startup-left-bis div  {
+    box-shadow: 4px 6px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 200px;
+    width: 151px;
+    height: 154px;
+    margin-bottom: 25px;
+}
+
+.startup-iconsGreen {
+    background: #71AD9B;
+}
+
+.startup-icons, .startup-iconsGreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startup-icons img#kazooLogo{
+    width: 110px;
+    height: 30px;    
+}
+
+.startup-iconsGreen img#fintechLogo{
+    width: 110px;
+    height: 45px;    
+}
+
+.startup-icons img#takeawasteLogo{
+    width: 96px;
+    height: 107px;    
+}
+
+.startup-left {
+    position: relative;
+    flex-basis: 30%;
+    padding-top: 39px;
+}
+
+.startup-left-bis {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.startup-right {
+    margin-left: 195px;
+}
+
+/* Voir pour mettre un auto layout du bouton cta */
