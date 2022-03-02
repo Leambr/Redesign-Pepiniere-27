@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     box-shadow: inset 210em 0.25em 0.25em rgba(0, 0, 0, 0.7);
     width: 100%;
-    /* height: 100vh; */
 }
 
 /* Navbar */
@@ -23,7 +22,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* height: 70px; */
     align-items: center;
     position: fixed;
     width: 100%;
@@ -34,7 +32,6 @@
 .navbar-active {
     display: flex;
     justify-content: space-between;
-    /* height: 70px; */
     align-items: center;
     position: fixed;
     width: 100%;
@@ -170,7 +167,7 @@ div button img {
     flex-basis: 65%;
 }
 
-.col-left h2, .startup-right h2 {
+.col-left h2, .startup-right h2, #activities h2 {
     font-family: 'Proza Libre';
     color: #243E36;
     font-weight: bold;
@@ -309,7 +306,7 @@ div .locaux {
     margin-top: 76px;  
 }
 
-img#background-logo {
+.background-logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -400,6 +397,57 @@ li span {
     list-style-image: url(../equipments_icons/box.svg);
 }
 
+/* Activités et évènements */
+/* #activities h2 {
+    width: 950px;
+    height: 103px;
+} */
 
+#activities {
+    position: relative;
+    height: 925px;
+    margin: 124px 12% 0;
+}
 
+.activities-card {
+    width: 415.52px;
+    height: 299px;
+    background: #C1A485;
+    box-shadow:  4px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    z-index: 1;
+    margin-bottom: 110px;
+}
 
+h4 {
+    font-family: 'Proza Libre';
+    color: #243E36;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.activities-card p {
+    font-family: 'Encode Sans';
+    font-weight: normal;
+    font-size: 16px;
+    color: #243E36;
+    padding-left: 7.25%;
+    padding-right: 7.25%;
+    padding-top: 41px;
+}
+
+.activities-first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.activities-second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
