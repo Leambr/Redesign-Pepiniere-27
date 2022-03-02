@@ -154,6 +154,7 @@ div button img {
 .col-left p, .col-left ul li, .startup-right p {
     font-family: 'Encode Sans';
     line-height: 24px;
+    font-size: 1em;
     margin-top:5px;
     margin-bottom:5px
 }
@@ -296,7 +297,7 @@ img#background-logo {
     font-weight: 700;
 }
 
-.locaux-assets h3 {
+.equipments h3 {
     font-family: 'Proza Libre';
     font-size: 24px;
     line-height: 39px;
@@ -308,14 +309,27 @@ img#background-logo {
 .locaux {
     font-family: 'Encode Sans';
     color: white;
+    font-size: 1em;
+    line-height: 24px;
 }
 
-.locaux-assets {
+.equipments {
     padding-bottom: 50px;
 }
 
-.locaux-points {
+.equipments-lists {
     display: flex;
+    line-height: 40px;
 }
 
+.equipment-list-desc {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 1em;
+}
+
+ul#equipment-list1 {
+    margin-right: 13em;
+}
 
