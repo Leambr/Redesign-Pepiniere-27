@@ -398,10 +398,6 @@ li span {
 }
 
 /* Activités et évènements */
-/* #activities h2 {
-    width: 950px;
-    height: 103px;
-} */
 
 #activities {
     position: relative;
@@ -439,6 +435,9 @@ h4 {
     padding-top: 41px;
 }
 
+.activities-card span {
+    display: block;
+}
 .activities-first-row {
     display: flex;
     flex-direction: row;
