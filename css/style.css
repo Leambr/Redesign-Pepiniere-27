@@ -268,7 +268,7 @@ input#cta-startup {
     width: 250px;
 }
 
-/* Les locaux */
+/* Les locaux et équipements */
 div #pepiniere-assets {
     background: #3C685A;
     position: relative;
@@ -320,16 +320,61 @@ img#background-logo {
 .equipments-lists {
     display: flex;
     line-height: 40px;
+    justify-content: space-between;
+    
 }
 
 .equipment-list-desc {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-left: 1em;
+    margin-left: 2.2em;
+    margin-top: 2.5em;
 }
 
-ul#equipment-list1 {
-    margin-right: 13em;
+#equipments-list1 {
+    flex: 0 0 80%
 }
+#equipments-list2 {
+    flex: 0 0 80%;
+}
+
+.equipment-list-desc li {
+    padding-left: 24px;
+    position:relative;
+}
+li span {
+    top: -8px;
+    position:relative;
+}
+/* Icones pour les listes */
+#equipments-list1 li:nth-of-type(1) {
+    list-style-image: url(../equipments_icons/locker.svg);
+}
+
+#equipments-list1 li:nth-of-type(2) {
+    list-style-image: url(../equipments_icons/office_desk.svg);
+}
+#equipments-list1 li:nth-of-type(3) {
+    list-style-image: url(../equipments_icons/meeting_room.svg);
+}
+#equipments-list1 li:nth-of-type(4) {
+    list-style-image: url(../equipments_icons/sport.svg);
+}
+
+#equipments-list2 li:nth-of-type(1) {
+    list-style-image: url(../equipments_icons/printer.svg);
+}
+#equipments-list2 li:nth-of-type(2) {
+    list-style-image: url(../equipments_icons/phone.svg);
+}
+#equipments-list2 li:nth-of-type(3) {
+    list-style-image: url(../equipments_icons/wifi.svg);
+}
+#equipments-list2 li:nth-of-type(4) {
+    list-style-image: url(../equipments_icons/box.svg);
+}
+
+
+
 
