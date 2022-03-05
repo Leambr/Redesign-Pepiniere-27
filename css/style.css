@@ -401,13 +401,13 @@ li span {
 
 #activities {
     position: relative;
-    height: 925px;
+    height: 800px;
     margin: 124px 12% 0;
 }
 
 .activities-card {
-    width: 415.52px;
-    height: 299px;
+    width: 415px;
+    height: 250px;
     background: #C1A485;
     box-shadow:  4px 6px 20px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
@@ -415,14 +415,14 @@ li span {
     margin-bottom: 110px;
 }
 
-h4 {
+.activities-card h4 {
     font-family: 'Proza Libre';
     color: #243E36;
     font-weight: 500;
     font-size: 22px;
     line-height: 150%;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 8%;
 }
 
 .activities-card p {
@@ -432,7 +432,7 @@ h4 {
     color: #243E36;
     padding-left: 7.25%;
     padding-right: 7.25%;
-    padding-top: 41px;
+    padding-top: 30px;
 }
 
 .activities-card span {
@@ -452,3 +452,86 @@ h4 {
 }
 
 
+/* Footer */
+
+
+footer {
+    height: 486px;
+    background: #243E36;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.h4-footer {
+    padding-top: 70px;
+    color: #F8F5F1;
+    font-family: 'Proza Libre';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.footer-partner-row1, .footer-partner-row2, .footer-partner-row3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-partner-row1, .footer-partner-row3 {
+    margin-left: 150px;
+}
+
+.footer-partner-row2 {
+    margin-left: 90px;
+}
+
+.footer-partners {
+    width: 80px;
+    height: 80px;
+    border-radius: 200px;
+    margin: 6.5px 25px;
+}
+
+/* Logo des partenaires */
+#sendinblue {
+    background: no-repeat center/50% #F8F5F1 url(../partners_logo/Sendinblue.svg);
+}
+#jurisdocs {
+    background: no-repeat center/90% #F8F5F1 url(../partners_logo/jurisdocs.svg);
+}
+#plezi {
+    background: no-repeat center/80% #F8F5F1 url(../partners_logo/plezi.svg);
+}
+#rocketChart {
+    background: no-repeat center/90% #F8F5F1 url(../partners_logo/rocketChart.svg);
+}
+#villeDeParis-partners {
+    background: no-repeat center/50% #F8F5F1 url(../partners_logo/villeDeParis.png);
+}
+#BPIFrance {
+    background: no-repeat center/80% #F8F5F1 url(../partners_logo/BPIFrance.svg);
+}
+#synintra {
+    background: no-repeat center/80% #F8F5F1 url(../partners_logo/Synintra.svg);
+}
+#hubspot {
+    background: no-repeat center/80% #F8F5F1 url(../partners_logo/Hubspot.svg);
+}
+#microsoftstartups {
+    background: no-repeat center/80% #F8F5F1 url(../partners_logo/microsoftstartups.svg);
+}
+#amazon {
+    background: no-repeat center/60% #F8F5F1 url(../partners_logo/amazon.svg);
+}
+#dhl {
+    background: no-repeat center/70% #F8F5F1 url(../partners_logo/dhl.svg);
+}
+#ulule {
+    background: no-repeat center/80% #F8F5F1 url(../partners_logo/ulule.svg);
+}
+#stripe {
+    background: no-repeat center/70% #F8F5F1 url(../partners_logo/stripe.svg);
+}
+
+/* Contact */
