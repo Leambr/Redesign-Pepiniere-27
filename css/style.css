@@ -453,37 +453,37 @@ li span {
 
 
 /* Footer */
-
-
 footer {
     height: 486px;
     background: #243E36;
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    justify-content: baseline;
+}
+
+.col-partners {
+    padding-top: 70px;
+    margin-left: 90px;
 }
 
 .h4-footer {
-    padding-top: 70px;
+    /* padding-top: 70px; */
     color: #F8F5F1;
     font-family: 'Proza Libre';
     font-weight: 500;
     font-size: 22px;
     line-height: 150%;
+}
+
+#h4-footer-partners {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .footer-partner-row1, .footer-partner-row2, .footer-partner-row3 {
     display: flex;
     flex-direction: row;
-}
-
-.footer-partner-row1, .footer-partner-row3 {
-    margin-left: 150px;
-}
-
-.footer-partner-row2 {
-    margin-left: 90px;
+    justify-content: center;
 }
 
 .footer-partners {
@@ -535,3 +535,62 @@ footer {
 }
 
 /* Contact */
+.col-contacts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 230px;
+}
+
+.h4-footer-contact {
+    padding-bottom: 8px;
+}
+.col-contacts p {
+    color: #F8F5F1;
+    padding-bottom: 50px;
+}
+
+#footer-nav {
+    padding-bottom: 50px;
+}
+.col-contacts a {
+    text-decoration: none;
+    color: #F8F5F1;
+    padding-right: 25px;
+}
+
+.col-contacts a, .col-contacts p {
+    font-family: 'Encode Sans';
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#address {
+    display: block;
+}
+
+#socials img {
+    width: 35px;
+    height: 35px;
+    padding-right: 20px;
+}
+
+
+
+
+/* Small screens */
+
+@media screen and (max-width: 768px) {
+    #logo, .nav-menu {
+        margin: 0 10px;
+    }
+
+}
+
+/* Tablets portrait */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #logo, .nav-menu {
+        margin: 0 50px;
+    }
+}
+

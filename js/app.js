@@ -1,3 +1,4 @@
+// Change navbar on scroll
 const navbar = document.querySelector('.navbar');
 
 function changeNav() {
@@ -7,3 +8,6 @@ function changeNav() {
 }
 
 window.onscroll = changeNav;
+
+
+
