@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;600;700;800&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
 
 * {
-    margin: 0;
+    box-sizing: inherit;
 }
 
 .homepage {
-    background: url(../img/homepage.jpg);
+    background: url(../img/homepage.jpg) no-repeat center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
     box-shadow: inset 210em 0.25em 0.25em rgba(0, 0, 0, 0.7);
     width: 100%;
+    /* pour le responsive à mettre en media queries */
+    /* height: 100vh; */
 }
 
 /* Navbar */
@@ -18,7 +25,7 @@
     height: 55px;
     margin: 0 90px;
 }
-    
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -55,8 +62,7 @@
 
 .nav-menu li a {
     text-decoration: none;
-    font-family: 'Proza Libre';
-    font-weight: normal;
+    font-family: 'Proza Libre Regular';
     color: #D6C2AE;
     font-size: 14px;
     line-height: 27px;
@@ -78,6 +84,7 @@
 }
 
 /* Title */
+
 .hero {
     display: flex;
     align-items: left;
@@ -94,8 +101,11 @@ h1 {
     font-weight: 800;
     font-size: 66px;
     line-height: 73px;
-    width: 425px;
     padding-bottom: 33px;
+}
+
+h1 span {
+    display: block;
 }
 
 h2 {
@@ -173,9 +183,8 @@ div button img {
 }
 
 .col-left h2, .startup-right h2, #activities h2 {
-    font-family: 'Proza Libre';
+    font-family: 'Proza Libre Bold';
     color: #243E36;
-    font-weight: bold;
 }
 
 .col-left p, .col-left ul li, .startup-right p {
@@ -212,14 +221,18 @@ p.pep, .startup-right p {
     margin-bottom: 25px;
 }
 
-.info-card img {
-    height: 63px;
-    width: 75px;
-    padding: 16% 34% 16px;
+#card-paris {
+    background: no-repeat url(../partners_logo/villeDeParis.png);
+    background-size: 30%;
+    background-position: 50% 20%;
+    padding-top: 80px;
 }
 
-#logo-ville-paris {
-    padding-top: 10%;
+#card-offer {
+    background: no-repeat url(../img/offre.png);
+    background-size: 30%;
+    background-position: 50% 20%;
+    padding-top: 100px;
 }
 
 .info-card p {
@@ -232,6 +245,11 @@ p.pep, .startup-right p {
 }
 
 .info-card p span {
+    display: block;
+    
+}
+
+.card-text span {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -304,11 +322,15 @@ div #pepiniere-assets {
 }
 
 
-div .locaux {
+.locaux {
     position: absolute;
     flex-direction: column;
     padding-top: 0;
-    margin-top: 76px;  
+    margin-top: 76px;
+    font-family: 'Encode Sans';
+    color: white;
+    font-size: 1em;
+    line-height: 24px;
 }
 
 .background-logo {
@@ -331,13 +353,6 @@ div .locaux {
     color: #FFF;
     font-weight: 600;
     padding-top: 76px;
-}
-
-.locaux {
-    font-family: 'Encode Sans';
-    color: white;
-    font-size: 1em;
-    line-height: 24px;
 }
 
 .equipments {
@@ -407,7 +422,7 @@ li span {
 #activities {
     position: relative;
     height: 800px;
-    margin: 124px 12% 0;
+    margin: 114px 12% 0;
 }
 
 .activities-card {
@@ -435,8 +450,8 @@ li span {
     font-weight: normal;
     font-size: 16px;
     color: #243E36;
-    padding-left: 7.25%;
-    padding-right: 7.25%;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-top: 30px;
 }
 
@@ -474,8 +489,7 @@ footer {
 .h4-footer {
     /* padding-top: 70px; */
     color: #F8F5F1;
-    font-family: 'Proza Libre';
-    font-weight: 500;
+    font-family: 'Proza Libre Regular';
     font-size: 22px;
     line-height: 150%;
 }
@@ -581,14 +595,13 @@ footer {
 }
 
 
-
-
 /* Small screens */
 
 @media screen and (max-width: 768px) {
     .navbar {
         height: 4em;
     }
+
     #logo {
         position: relative;
         z-index: 20;
@@ -635,6 +648,7 @@ footer {
         flex-direction: column;
         padding: 2rem;
         align-items: center;
+        text-align: center;
         justify-content: space-around;
         margin: 0;
         /* Tout le menu est décalé vers la gauche s'il est fermé */
@@ -655,7 +669,34 @@ footer {
     .nav-menu li a:hover {
         color: #EAE0D5;
         border-bottom: 4px solid #528E7C;
+    }
 
+    .hero {
+        padding: 0;
+    }
+
+    /* Pépinière description */
+    .pepiniere {
+        flex-direction: column;
+        margin: 0 10%;
+        align-items: center;
+    }
+
+    .col-right, .col-right-bis {
+        margin: 0;
+        padding: 0;
+    }
+    .col-right div, .col-right-bis div  {
+        box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        width: 232px;
+        height: 180px;
+        margin-bottom: 25px;
+    }
+
+    #card-paris {
+        margin-top: 20px;
+    }
 }
 
 /* Tablets portrait */

@@ -11,7 +11,6 @@ window.onscroll = changeNav;
 
 
 // Small screens menu
-
 let toggleMenu = document.querySelector('.toggle-menu');
 let body = document.querySelector('body');
 
