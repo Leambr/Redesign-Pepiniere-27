@@ -5,7 +5,7 @@
 }
 
 .homepage {
-    background-image: url('http://www.pepiniere27.fr/media/uploads/pepi27/fckfiles/images/Carousel%20de%20home/_YR_0304.jpg');
+    background: url(../img/homepage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 210em 0.25em 0.25em rgba(0, 0, 0, 0.7);
@@ -70,6 +70,11 @@
 
 .navbar-active .nav-menu li a {
     color: #886744;
+}
+
+/* Small screens menu */
+.toggle-menu {
+    display: none;
 }
 
 /* Title */
@@ -581,9 +586,75 @@ footer {
 /* Small screens */
 
 @media screen and (max-width: 768px) {
-    #logo, .nav-menu {
-        margin: 0 10px;
+    .navbar {
+        height: 4em;
     }
+    #logo {
+        position: relative;
+        z-index: 20;
+        margin: 2rem;
+}
+
+    .menu-icon {
+        width: 2em;
+    }
+
+    .toggle-menu {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    #open-menu {
+        display: block;
+        margin: 2rem;
+    }
+
+    #close-menu {
+        display: none;
+    }
+    /* Si le menu est ouvert, on cache le bouton ouvrir et on affiche le bouton fermer */
+    .open #open-menu {
+        display: none;
+    }
+    .open #close-menu {
+        display: block;
+        margin: 2rem;
+    }
+
+    /* Affichage du menu */
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #F8F5F1;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        /* Tout le menu est décalé vers la gauche s'il est fermé */
+        transform: translateX(-100%);
+    }
+
+    /* Le menu revient à sa position de départ s'il est ouvert */
+    .open .nav-menu {
+        transform: translateX(0);
+        transition: transform 0.5s;
+    }
+
+    .nav-menu li a {
+        font-size: 2rem;
+        color: #886744;
+    }
+
+    .nav-menu li a:hover {
+        color: #EAE0D5;
+        border-bottom: 4px solid #528E7C;
 
 }
 
@@ -593,4 +664,3 @@ footer {
         margin: 0 50px;
     }
 }
-
