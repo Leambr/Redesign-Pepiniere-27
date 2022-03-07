@@ -93,12 +93,11 @@ body, html {
 }
 
 .hero h1, .hero h2 {
-    font-family: 'Proza Libre';
+    font-family: 'Proza Libre Bold';
     color: #D6C2AE;
 }
 
 h1 {
-    font-weight: 800;
     font-size: 66px;
     line-height: 73px;
     padding-bottom: 33px;
@@ -109,10 +108,9 @@ h1 span {
 }
 
 h2 {
-    font-weight: 600;
     font-size: 30px;
     line-height: 39px;
-    padding-bottom: 37px;
+    padding-bottom: 20px;
 }
 
 .cta {
@@ -202,14 +200,12 @@ p.pep, .startup-right p {
 /* Cards info */
 .col-right {
     position: relative;
-    flex-basis: 30%;
     padding-left: 68px;
     margin-right: 15px;
 }
 
 .col-right-bis {
     position: relative;
-    flex-basis: 20%;
     padding-top: 39px;
 }
 
@@ -317,10 +313,9 @@ input#cta-startup {
 div #pepiniere-assets {
     background: #3C685A;
     position: relative;
-    height: 746px;
+    height: 780px;
     margin-top: 114px;
 }
-
 
 .locaux {
     position: absolute;
@@ -341,17 +336,15 @@ div #pepiniere-assets {
 }
 
 .locaux-description h2 {
-    font-family: 'Proza Libre';
+    font-family: 'Proza Libre Bold';
     color: #FFF;
-    font-weight: 700;
 }
 
 .equipments h3 {
-    font-family: 'Proza Libre';
+    font-family: 'Proza Libre Medium';
     font-size: 24px;
     line-height: 39px;
     color: #FFF;
-    font-weight: 600;
     padding-top: 76px;
 }
 
@@ -426,6 +419,8 @@ li span {
 }
 
 .activities-card {
+    display: block;
+    overflow: auto;
     width: 415px;
     height: 250px;
     background: #C1A485;
@@ -433,16 +428,16 @@ li span {
     border-radius: 18px;
     z-index: 1;
     margin-bottom: 110px;
+    margin-right: 20px;
 }
 
 .activities-card h4 {
-    font-family: 'Proza Libre';
+    font-family: 'Proza Libre Regular';
     color: #243E36;
     font-weight: 500;
     font-size: 22px;
     line-height: 150%;
     text-align: center;
-    padding-top: 8%;
 }
 
 .activities-card p {
@@ -452,7 +447,6 @@ li span {
     color: #243E36;
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 30px;
 }
 
 .activities-card span {
@@ -663,6 +657,7 @@ footer {
 
     .nav-menu li a {
         font-size: 2rem;
+        line-height: 1.5em;
         color: #886744;
     }
 
@@ -680,22 +675,72 @@ footer {
         flex-direction: column;
         margin: 0 10%;
         align-items: center;
+        padding-top: 80px;
     }
 
-    .col-right, .col-right-bis {
+    .col-left {
+        padding-bottom: 20px;
+    }
+
+    .col-right, .col-right-bis  {
+        display: flex;
+        padding: 0;
         margin: 0;
+    }
+
+    .info-card {
+        margin: 5px;
+    }
+
+    .col-right div, .col-right-bis div  {
+        width: 180px;
+        height: 150px;
+    }
+
+
+    /* Start-up */
+    .start-up {
+        flex-direction: column-reverse;
+        padding: 0;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .startup-right {
         padding: 0;
     }
-    .col-right div, .col-right-bis div  {
-        box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 6px;
-        width: 232px;
-        height: 180px;
-        margin-bottom: 25px;
+
+    .startup-left, .startup-left-bis {
+        display: flex;
+        padding: 0;
+        margin-top: 50px;
     }
 
-    #card-paris {
-        margin-top: 20px;
+    .startup-left div, .startup-left-bis div {
+        margin: 0 25px;
+        width: 130px;
+        height: 130px;
+    }
+
+
+    /* Locaux et équipements */
+    div #pepiniere-assets {
+        height: 1300px;
+        margin-top: 80px;
+    }
+    .equipments-lists {
+        flex-direction: column;
+    }
+
+
+    /* Activités et évènements */
+    .activities-card {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .activities-first-row, .activities-second-row {
+        flex-direction: column;
+        width: 200px;
     }
 }
 
@@ -705,3 +750,15 @@ footer {
         margin: 0 50px;
     }
 }
+
+/* UW screens */
+@media screen and (min-width: 1600px) {
+    .pepiniere, .start-up { 
+        /* Taille fixe */
+        width: 1500px;
+        /* Centrer */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  }
