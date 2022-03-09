@@ -345,7 +345,6 @@ div #pepiniere-assets {
     font-size: 24px;
     line-height: 39px;
     color: #FFF;
-    padding-top: 76px;
 }
 
 .equipments {
@@ -356,7 +355,7 @@ div #pepiniere-assets {
     display: flex;
     line-height: 40px;
     justify-content: space-between;
-    
+    /* flex-wrap: wrap; */
 }
 
 .equipment-list-desc {
@@ -367,16 +366,13 @@ div #pepiniere-assets {
     margin-top: 2.5em;
 }
 
-#equipments-list1 {
-    flex: 0 0 80%
-}
 #equipments-list2 {
-    flex: 0 0 80%;
+    padding-left: 200px
 }
 
 .equipment-list-desc li {
     padding-left: 24px;
-    position:relative;
+
 }
 li span {
     top: -8px;
@@ -411,7 +407,6 @@ li span {
 }
 
 /* Activités et évènements */
-
 #activities {
     position: relative;
     height: 800px;
@@ -419,8 +414,6 @@ li span {
 }
 
 .activities-card {
-    display: block;
-    overflow: auto;
     width: 415px;
     height: 250px;
     background: #C1A485;
@@ -452,13 +445,7 @@ li span {
 .activities-card span {
     display: block;
 }
-.activities-first-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.activities-second-row {
+.activities-first-row, .activities-second-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -592,6 +579,7 @@ footer {
 /* Small screens */
 
 @media screen and (max-width: 768px) {
+
     .navbar {
         height: 4em;
     }
@@ -732,33 +720,48 @@ footer {
         flex-direction: column;
     }
 
+    #equipments-list2 {
+        padding-left: 0;
+    }
+
 
     /* Activités et évènements */
     .activities-card {
         margin-bottom: 50px;
         text-align: center;
+        width: 280px;
+        height: 280px;
+    }
+
+    .activities-card h4 {
+        font-size: 20px;
+        padding-top: 15px;
     }
     .activities-first-row, .activities-second-row {
-        flex-direction: column;
-        width: 200px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0;
+     
     }
 }
 
 /* Tablets portrait */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
     #logo, .nav-menu {
         margin: 0 50px;
     }
-}
+} */
 
 /* UW screens */
-@media screen and (min-width: 1600px) {
-    .pepiniere, .start-up { 
+/* @media screen and (min-width: 1600px) {
+    .pepiniere, .start-up {  */
         /* Taille fixe */
-        width: 1500px;
+        /* width: 1500px; */
         /* Centrer */
-        margin-left: auto;
+        /* margin-left: auto;
         margin-right: auto;
     }
 
-  }
+  } */
