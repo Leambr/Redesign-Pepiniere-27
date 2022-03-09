@@ -15,8 +15,6 @@ body, html {
     background-size: cover;
     box-shadow: inset 210em 0.25em 0.25em rgba(0, 0, 0, 0.7);
     width: 100%;
-    /* pour le responsive à mettre en media queries */
-    /* height: 100vh; */
 }
 
 /* Navbar */
@@ -409,7 +407,6 @@ li span {
 /* Activités et évènements */
 #activities {
     position: relative;
-    height: 800px;
     margin: 114px 12% 0;
 }
 
@@ -455,7 +452,7 @@ li span {
 
 /* Footer */
 footer {
-    height: 486px;
+    /* height: 486px; */
     background: #243E36;
     display: flex;
     flex-direction: row;
@@ -463,6 +460,8 @@ footer {
 }
 
 .col-partners {
+    display: flex;
+    flex-direction: column;
     margin-left: 90px;
     padding-top: 35px;
 }
@@ -570,12 +569,28 @@ footer {
     width: 50px;
     height: 50px;
     padding-right: 20px;
+    cursor: pointer;
 }
 
 
 /* Small screens */
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero h2 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .hero .cta {
+        text-align: center;
+        margin: 0 auto;
+    }
 
     .navbar {
         height: 4em;
@@ -726,7 +741,7 @@ footer {
     .activities-card {
         margin-bottom: 50px;
         text-align: center;
-        width: 280px;
+        width: 270px;
         height: 280px;
     }
 
@@ -744,6 +759,48 @@ footer {
     }
 
     /* Footer */
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-partner-row1, .footer-partner-row2, .footer-partner-row3 {
+        flex-wrap: wrap;
+    }
+
+    .footer-partners {
+        margin: 6.5px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .col-contacts {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .col-partners {
+        margin-left: 6.5px;
+    }
+
+    .col-partners :nth-child(3) { 
+        order:4; 
+    }
+
+    .h4-footer-contact {
+        text-align: center;
+    }
+
+    #address {
+        display: inline;
+    }
+
+    #footer-nav {
+        text-align: center;
+    }
+
+    .col-contacts a {
+        padding: 7.5px;
+    }
 }
 
 /* Tablets portrait */
