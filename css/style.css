@@ -775,7 +775,7 @@ footer {
     }
 
     .col-contacts {
-        padding-left: 0;
+        padding: 0 35px;
         align-items: center;
     }
 
