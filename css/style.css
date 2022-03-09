@@ -463,12 +463,11 @@ footer {
 }
 
 .col-partners {
-    padding-top: 70px;
     margin-left: 90px;
+    padding-top: 35px;
 }
 
 .h4-footer {
-    /* padding-top: 70px; */
     color: #F8F5F1;
     font-family: 'Proza Libre Regular';
     font-size: 22px;
@@ -477,7 +476,6 @@ footer {
 
 #h4-footer-partners {
     text-align: center;
-    padding-bottom: 30px;
 }
 
 .footer-partner-row1, .footer-partner-row2, .footer-partner-row3 {
@@ -538,21 +536,20 @@ footer {
 .col-contacts {
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    justify-content: baseline;
+    padding-top: 35px;
     padding-left: 230px;
 }
 
 .h4-footer-contact {
-    padding-bottom: 8px;
-}
-.col-contacts p {
-    color: #F8F5F1;
-    padding-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-#footer-nav {
-    padding-bottom: 50px;
+.col-contacts p {
+    margin: 0;
+    color: #F8F5F1;
 }
+
 .col-contacts a {
     text-decoration: none;
     color: #F8F5F1;
@@ -570,8 +567,8 @@ footer {
 }
 
 #socials img {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     padding-right: 20px;
 }
 
@@ -745,6 +742,8 @@ footer {
         margin: 0;
      
     }
+
+    /* Footer */
 }
 
 /* Tablets portrait */
