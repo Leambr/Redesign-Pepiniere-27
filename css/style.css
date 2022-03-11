@@ -353,7 +353,6 @@ div #pepiniere-assets {
     display: flex;
     line-height: 40px;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
 .equipment-list-desc {
@@ -867,17 +866,30 @@ footer {
      
     }
 
-    /* Dernières actualités */
+    /* Dernières actualités */   
+
     .news {
         margin: 0 auto;
     }
 
+    .news h2 {
+        margin: 114px 12% 0;
+    }
     .news-carousel {
         flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+       
+
+    }
+
+    .news-card, .news-card-pic, .news-card-info {
+        width: 310px;
     }
 
     .news-background {
         height: 80%;
+        width: 95%;
     
     }
 
