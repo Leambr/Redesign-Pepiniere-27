@@ -489,9 +489,6 @@ li span {
     border-radius: 18px;
 }
 
-.news-card:nth-child(1) {
-
-}
 
 .news-card-pic {
     border-radius: 18px;
@@ -500,8 +497,16 @@ li span {
     position: absolute;
 }
 
-.news-card-pic:nth-child(1) {
-    background: linear-gradient(0deg, rgba(36, 62, 54, 0.5), rgba(36, 62, 54, 0.2)), url(../img/food-tech.jpg);
+#news1 {
+    background: linear-gradient(0deg, rgba(36, 62, 54, 0.9), rgba(36, 62, 54, 0.2)), url(../img/food-tech.jpg);
+    background-size: cover;
+}
+#news2 {
+    background: linear-gradient(0deg, rgba(36, 62, 54, 0.9), rgba(36, 62, 54, 0.2)), url(../img/welcome.jpg);
+    background-size: cover;
+}
+#news3 {
+    background: linear-gradient(0deg, rgba(36, 62, 54, 0.9), rgba(36, 62, 54, 0.2)), url(../img/fundtruck.svg);
     background-size: cover;
 }
 
@@ -515,7 +520,7 @@ li span {
     top: 80px;
 
 }
-.h4-news-card span {
+.h4-news-card span, .news-card-description span {
     display: block;
 }
 .news-card-info {
@@ -865,6 +870,19 @@ footer {
     /* Dernières actualités */
     .news {
         margin: 0 auto;
+    }
+
+    .news-carousel {
+        flex-direction: column;
+    }
+
+    .news-background {
+        height: 80%;
+    
+    }
+
+    .news-card {
+        margin-bottom: 50px;
     }
 
     /* Footer */
