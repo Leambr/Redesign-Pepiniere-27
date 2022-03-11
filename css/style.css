@@ -456,8 +456,15 @@ li span {
     margin: 114px 12% 0;
 }
 
+.news-carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    width: 100%;
+}
+
 .news h2 {
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 39px;
     padding-bottom: 20px;
     color: #243E36;
@@ -466,21 +473,85 @@ li span {
 
 .news-background {
     position: absolute;
+    top: 160px;
     z-index: -1;
     width: 100%;
-    height: 593px;
+    height: 530px;
     background: rgba(113, 173, 155, 0.55);
     border-radius: 94px 94px 94px 0px;
 }
 
 .news-card {
-    width: 380px;
-    height: 631px;
+    width: 350px;
+    height: 520px;
     background: #FFFFFF;
     box-shadow: 4px 6px 20px 1px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
 }
 
+.news-card:nth-child(1) {
+
+}
+
+.news-card-pic {
+    border-radius: 18px;
+    width: 350px;
+    height: 210px;
+    position: absolute;
+}
+
+.news-card-pic:nth-child(1) {
+    background: linear-gradient(0deg, rgba(36, 62, 54, 0.5), rgba(36, 62, 54, 0.2)), url(../img/food-tech.jpg);
+    background-size: cover;
+}
+
+.h4-news-card {
+    position: absolute;
+    font-family: 'Proza Libre Semi-Bold';
+    color: #F8F5F1;
+    font-size: 1.625em;
+    line-height: 39px;
+    left: 30px;
+    top: 80px;
+
+}
+.h4-news-card span {
+    display: block;
+}
+.news-card-info {
+    position: absolute;
+    width: 350px;
+    height: 210px;
+}
+
+.news-card-date {
+    font-family: 'Proza Libre Medium';
+    color: 243E36;
+    font-size: 1.25em;
+    position: absolute;
+    top: 220px;
+    left: 30px;
+}
+
+.news-card-description {
+    position: absolute;
+    font-family: 'Encode Sans';
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    left: 30px;
+    right: 30px;
+    top: 276px;
+}
+
+.news-card-cta {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 444px;
+    
+    
+}
 
 /* Footer */
 footer {
@@ -789,6 +860,11 @@ footer {
         position: relative;
         margin: 0;
      
+    }
+
+    /* Dernières actualités */
+    .news {
+        margin: 0 auto;
     }
 
     /* Footer */
