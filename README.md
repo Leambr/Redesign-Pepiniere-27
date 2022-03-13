@@ -25,6 +25,8 @@
 
 ## Project Overview
 
+![image](https://user-images.githubusercontent.com/95865130/158060452-0e03c8b4-0a4f-42e3-93ce-103018b060fa.png)
+
 The goal of the project was to redesign the homepage of [Pepiniere 27 website](http://www.pepiniere27.fr/). After doing the design on Figma, I decided to develop it by myself in order to truly do the project until the end.<br>
 It was a great challenge to practice responsive design, as well as a responsive navbar with JavaScript. I still have to work on the disply on IOS devices since it is not displayed as on an Android device (cta, margins, some colors).
 
@@ -32,6 +34,9 @@ It was a great challenge to practice responsive design, as well as a responsive 
 ### Figma
 
 You can find below the Figma we created with my group. It was a great challenge to practice responsive design, as well as a responsive navbar with JavaScript.
+
+![image](https://user-images.githubusercontent.com/95865130/158060492-7e8677b7-bc77-403f-b274-9ca4dd2fe7c9.png)
+
 
 ### Built With
 
