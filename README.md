@@ -18,7 +18,6 @@
 
 - [Project overview](#project-overview)
 - [Built With](#built-with)
-- [Figma](#figma)
 - [Author](#author)
 - [Contact](#contact)
 
@@ -26,45 +25,19 @@
 
 ## Project Overview
 
-![image](https://user-images.githubusercontent.com/95865130/156772107-656c8ad9-a618-4fce-93a1-e5c14355fc33.png)
-<br><strong>Dark mode</strong><br>
+The goal of the project was to redesign the homepage of [Pepiniere 27 website](http://www.pepiniere27.fr/). After doing the design on Figma, I decided to develop it by myself in order to truly do the project until the end.<br>
+It was a great challenge to practice responsive design, as well as a responsive navbar with JavaScript. I still have to work on the disply on IOS devices since it is not displayed as on an Android device (cta, margins, some colors).
 
-![image](https://user-images.githubusercontent.com/95865130/156772525-2bb9d01d-247b-43fa-9bb9-0d9ec32b42fb.png)
-<br><strong>Light mode</strong>
 
-In order to practice JavaScript, we had to individually create a Mastermind. There were some mandatory features which needed to be developped and some bonus features.
+### Figma
 
-### Mandatory features
-- The computer has to choose between 5 colors in order to create a random sequence of 4 colors. The same color can be used multiple times
-- The player can choose 4 colors out of 5
-- The computer should be able to compare its sequence to the player's sequence in order to determine how many colors are well placed and how many colors are misplaced
-- The computer should be able to display the result of the comparison to the player
-- The computer should be able to display the victory of the winner
-- Colors are represented by a letter
-
-### Bonus features
-- Colors are represented by color boxes
-- The player can only guess 10 times
-- Buttons should be displayed to choose colors, validate them or clear them
-- Add a button to launch a new game
-- Create a game board
-- Make the page responsive to play on smartphones
-- Darkmode/Lightmode toggle
+You can find below the Figma we created with my group. It was a great challenge to practice responsive design, as well as a responsive navbar with JavaScript.
 
 ### Built With
 
 - [HTML 5](https://developer.mozilla.org/fr/docs/Web/HTML) - Layout and web structure
 - [CSS 3](https://developer.mozilla.org/fr/docs/Web/CSS) - Style design
 - [JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript) - Web page behavior
-
-
-## Figma
-
-The player has to guess the colors choosen by the computer in the right order.
-When colors are well placed, a green number will be displayed.
-When a color exists in the computer's sequence but is misplaced, a red number will be displayed.
-If the color does not exist, 0 will be displayed.
-
 
 ## Author
 
