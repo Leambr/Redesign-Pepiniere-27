@@ -486,6 +486,7 @@ li span {
     background: #FFFFFF;
     box-shadow: 4px 6px 20px 1px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
+    
 }
 
 
@@ -706,7 +707,7 @@ footer {
         position: relative;
         z-index: 20;
         margin: 2rem;
-}
+    }
 
     .menu-icon {
         width: 2em;
@@ -879,8 +880,6 @@ footer {
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
-       
-
     }
 
     .news-card, .news-card-pic, .news-card-info {
@@ -944,20 +943,236 @@ footer {
 }
 
 /* Tablets portrait */
-/* @media screen and (min-width: 769px) and (max-width: 1024px) {
-    #logo, .nav-menu {
-        margin: 0 50px;
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .navbar {
+        height: 4em;
     }
-} */
 
-/* UW screens */
-/* @media screen and (min-width: 1600px) {
-    .pepiniere, .start-up {  */
-        /* Taille fixe */
-        /* width: 1500px; */
-        /* Centrer */
-        /* margin-left: auto;
+    #logo {
+        position: relative;
+        z-index: 20;
+        margin: 2rem;
+    }
+
+    .menu-icon {
+        width: 2em;
+    }
+
+    .toggle-menu {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    #open-menu {
+        display: block;
+        margin: 2rem;
+    }
+
+    #close-menu {
+        display: none;
+    }
+    /* Si le menu est ouvert, on cache le bouton ouvrir et on affiche le bouton fermer */
+    .open #open-menu {
+        display: none;
+    }
+    .open #close-menu {
+        display: block;
+        margin: 2rem;
+    }
+
+    /* Affichage du menu */
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #F8F5F1;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        margin: 0;
+        /* Tout le menu est décalé vers la gauche s'il est fermé */
+        transform: translateX(100%);
+    }
+
+    /* Le menu revient à sa position de départ s'il est ouvert */
+    .open .nav-menu {
+        transform: translateX(0);
+        transition: transform 0.5s;
+    }
+
+    .nav-menu li a {
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        color: #886744;
+    }
+
+    .nav-menu li a:hover {
+        color: #EAE0D5;
+        border-bottom: 4px solid #528E7C;
+    }
+
+     /* Pépinière description */
+     .pepiniere {
+        flex-direction: column;
+        margin: 0 10%;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .col-left {
+        padding-bottom: 20px;
+    }
+
+    .col-right, .col-right-bis  {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info-card {
+        margin: 5px;
+    }
+
+    .col-right div, .col-right-bis div  {
+        width: 180px;
+        height: 150px;
+    }
+
+
+    /* Start-up */
+    .start-up {
+        flex-direction: column-reverse;
+        padding: 0;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .startup-right {
+        padding: 0;
+    }
+
+    .startup-left, .startup-left-bis {
+        display: flex;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .startup-left div, .startup-left-bis div {
+        margin: 0 25px;
+        width: 130px;
+        height: 130px;
+    }
+
+
+    /* Locaux et équipements */
+    div #pepiniere-assets {
+        height: 1300px;
+        margin-top: 80px;
+    }
+    .equipments-lists {
+        flex-direction: column;
+    }
+
+    #equipments-list2 {
+        padding-left: 0;
+    }
+
+
+    /* Activités et évènements */
+    .activities-card {
+        margin-bottom: 50px;
+        text-align: center;
+        width: 270px;
+        height: 300px;
+        margin-left: auto;
         margin-right: auto;
     }
 
-  } */
+    .activities-card h4 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    /* Dernières actualités */   
+
+    .news {
+        margin: 0 auto;
+    }
+
+    .news h2 {
+        margin: 114px 12% 0;
+    }
+    .news-carousel {
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .news-card, .news-card-pic, .news-card-info {
+        width: 310px;
+    }
+
+    .news-background {
+        height: 80%;
+        width: 95%;
+    
+    }
+
+    .news-card {
+        margin-bottom: 50px;
+        margin-right: 30px;
+    }
+
+    /* Footer */
+    footer {
+        margin: 0 auto;
+    }
+
+    .footer-partner-row1, .footer-partner-row2, .footer-partner-row3 {
+        flex-wrap: wrap;
+    }
+
+    .footer-partners {
+        margin: 6.5px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .col-contacts {
+        padding: 0 35px;
+        align-items: center;
+    }
+
+    .col-partners {
+        margin-left: 6.5px;
+    }
+
+    .col-partners :nth-child(3) { 
+        order:4; 
+    }
+
+    .h4-footer-contact {
+        text-align: center;
+    }
+
+    #address {
+        display: inline;
+    }
+
+    #footer-nav {
+        text-align: center;
+    }
+
+    .col-contacts a {
+        padding: 7.5px;
+    }
+}
+
+
